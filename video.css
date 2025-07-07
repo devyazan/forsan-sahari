@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+
+
 
 body {
-    background-color: #000016;
-}
+    background-color: #000016; 
+    }
+    
+    
+    *{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth; 
+    }
 
 header {
     background-color: #f0f0f0;
@@ -22,7 +26,6 @@ header {
     align-items: center;
     padding: 10px 200px;
 }
-
 .navigation a {
     color: #3a6cf4;
     text-decoration: none;
@@ -30,12 +33,10 @@ header {
     font-weight: 500;
     padding-left: 30px;
 }
-
-.navigation a:hover {
+.navigation a:hover{
     color: #601cfc;
 }
-
-.logo {
+.logo{
     text-decoration: none;
     color: #3a6cf4;
     text-transform: uppercase;
@@ -63,6 +64,7 @@ header {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .card {
@@ -73,6 +75,9 @@ header {
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
+    
+    
+   
 }
 
 .card:hover {
@@ -89,12 +94,16 @@ header {
     text-align: center;
 }
 
-.info h3 {
+.info h3{
     color: #3a6cf4;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
+
+
+
+
 
 .photo-card {
     background-color: #fff;
@@ -105,18 +114,21 @@ header {
     border-radius: 10px;
     margin: 20px;
     transition: 0.7s ease;
+    
+   
+    
 }
 
 .photo-card:hover {
-    transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .photo-card:hover .photo-image {
     opacity: 0.9;
-}
+ }
 
-.photo-image img {
-    width: 100%;
+.photo-image img{
+    width: 100%
 }
 
 .photo-info {
@@ -145,7 +157,7 @@ header {
     color: #601cfc;
 }
 
-.contact .icon {
+.contact .icon{
     font-size: 4.5em;
 }
 
@@ -159,11 +171,13 @@ header {
 
 .footer {
     background-color: #000000;
-    color: rgb(255, 255, 255);
+    color: #fff;
     padding: 2em;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    bottom: -130px;
+    position: relative;
+    
+    
 }
 
 .footer-title {
@@ -172,12 +186,67 @@ header {
 }
 
 .footer-title span {
-    color: #210381;
+    color: #3a6cf4;
 }
 
-.footer .social-icons a {
+.footer .social-icons a{
     font-size: 1.3em;
     padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+    
+    
 }
 
 .main {
@@ -189,7 +258,6 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-top: 80px; /* تعويض الهيدر الثابت */
 }
 
 .main h2 {
@@ -233,6 +301,37 @@ header {
     background-color: #0a49f6;
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========== Responsive Fixes for Mobile ========== */
 @media (max-width: 768px) {
