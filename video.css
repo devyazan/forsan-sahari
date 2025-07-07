@@ -174,7 +174,7 @@ header {
     color: #fff;
     padding: 2em;
     display: flex;
-    bottom: -130px;
+    bottom: -150px;
     position: relative;
     
     
@@ -328,7 +328,35 @@ header {
 
 
 
+/* ========== Responsive Fixes for Mobile ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .navigation a {
+        font-size: 1em;
+        padding-left: 15px;
+    }
+
+    .logo {
+        font-size: 1.4em;
+    }
+
+    .main {
+        padding-top: 100px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 
 
