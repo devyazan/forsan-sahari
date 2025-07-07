@@ -273,42 +273,6 @@ section {
 
 }
 
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-    }
-
-    .main-content h2{
-        font-size: 0.8em;
-    }
-
-    .main-content h3{
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
-    }
-    
-    
-}
-
-.main {
-  padding-top: 100px;
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 10px 20px;
-  }
-
-  .main {
-    padding-top: 120px;
-  }
-}
 
 /* ========== Responsive Fixes for Mobile ========== */
 @media (max-width: 768px) {
