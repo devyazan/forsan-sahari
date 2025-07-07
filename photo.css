@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-
-body {
-    background-color: #000016; 
-}
-    *{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000016;
 }
 
 header {
@@ -22,26 +20,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px ;
+    padding: 10px 200px;
 }
-.navigation a{
+
+.navigation a {
     color: #3a6cf4;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
 }
-.navigation a:hover{
+
+.navigation a:hover {
     color: #601cfc;
 }
-.logo{
+
+.logo {
     text-decoration: none;
     color: #3a6cf4;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 }
-
 
 .social-icons a {
     color: #fff;
@@ -63,7 +63,6 @@ header {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -74,9 +73,6 @@ header {
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
-    
-    
-   
 }
 
 .card:hover {
@@ -93,16 +89,12 @@ header {
     text-align: center;
 }
 
-.info h3{
+.info h3 {
     color: #3a6cf4;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
-
-
-
-
 
 .photo-card {
     background-color: #fff;
@@ -113,21 +105,18 @@ header {
     border-radius: 10px;
     margin: 20px;
     transition: 0.7s ease;
-    
-   
-    
 }
 
 .photo-card:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .photo-card:hover .photo-image {
     opacity: 0.9;
- }
+}
 
-.photo-image img{
-    width: 100%
+.photo-image img {
+    width: 100%;
 }
 
 .photo-info {
@@ -156,7 +145,7 @@ header {
     color: #601cfc;
 }
 
-.contact .icon{
+.contact .icon {
     font-size: 4.5em;
 }
 
@@ -174,6 +163,7 @@ header {
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-title {
@@ -185,7 +175,7 @@ header {
     color: #210381;
 }
 
-.footer .social-icons a{
+.footer .social-icons a {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
@@ -199,6 +189,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 80px; /* تعويض الهيدر الثابت */
 }
 
 .main h2 {
@@ -243,21 +234,32 @@ header {
     transform: scale(1.1);
 }
 
+/* ========== Responsive Fixes for Mobile ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .navigation a {
+        font-size: 1em;
+        padding-left: 15px;
+    }
 
+    .logo {
+        font-size: 1.4em;
+    }
 
+    .main {
+        padding-top: 100px;
+        text-align: center;
+        flex-direction: column;
+    }
 
-
-
-
-
-
-.title {
-    display: flex;
-    justify-content: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
-
