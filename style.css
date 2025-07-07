@@ -303,3 +303,16 @@ section {
         text-align: center;
     }
 }
+.photo-main, .content, .gallery {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .photo-main, .content, .gallery {
+    padding-top: 120px;
+  }
+}
