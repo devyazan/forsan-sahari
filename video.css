@@ -329,6 +329,19 @@ header {
 
 
 
+.video-section, .content, .video-main {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .video-section, .content, .video-main {
+    padding-top: 120px;
+  }
+}
 
 
 
